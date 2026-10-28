@@ -126,10 +126,37 @@
   ]);
 
   renderBarChart('chartValuacion', [
-    { label: 'Conservador', value: 33.7, display: '$33.7M' },
-    { label: 'Base / Realista', value: 39.7, display: '$39.7M' },
-    { label: 'Optimista', value: 47.5, display: '$47.5M' }
-  ], { max: 47.5, marker: 33 });
+    { label: 'Conservador', value: 31.8, display: '$31.8M' },
+    { label: 'Base / Realista', value: 37.2, display: '$37.2M' },
+    { label: 'Optimista', value: 44.4, display: '$44.4M' }
+  ], { max: 44.4, marker: 33 });
+
+  /* ============ Monthly revenue / EBITDA chart ============ */
+  (function(){
+    var el = document.getElementById('chartMensual');
+    if(!el) return;
+    var m = ['nov 24','dic','ene 25','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic','ene 26','feb','mar','abr','may 26'];
+    var rev = [121.1,122.3,132.1,152.9,175.2,192.1,165.6,193.4,227.3,189.6,208.8,217.5,195.1,194.9,223.9,192.8,223.5,232.9,207.8];
+    var eb  = [51.3,52.0,70.3,55.2,89.9,83.8,48.0,88.5,135.1,89.1,105.0,92.3,67.1,77.8,60.5,62.7,119.8,98.6,91.9];
+    var max = 240;
+    el.innerHTML = m.map(function(lbl, i){
+      return '<div class="mc-col"><div class="mc-rev" data-h="' + (rev[i]/max*100) + '"></div><div class="mc-eb" data-h="' + (eb[i]/max*100) + '"></div>' +
+             '<span class="mc-tip">' + lbl + ': ingresos $' + rev[i].toFixed(0) + 'k · EBITDA $' + eb[i].toFixed(0) + 'k</span></div>';
+    }).join('');
+    var labels = document.createElement('div');
+    labels.className = 'month-labels';
+    labels.innerHTML = m.map(function(l){ return '<span>' + l + '</span>'; }).join('');
+    el.parentNode.insertBefore(labels, el.nextSibling);
+    function grow(){
+      el.querySelectorAll('[data-h]').forEach(function(b){ b.style.height = b.getAttribute('data-h') + '%'; });
+    }
+    if('IntersectionObserver' in window && !prefersReducedMotion){
+      var mio = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ grow(); mio.disconnect(); } });
+      }, { threshold: 0.25 });
+      mio.observe(el);
+    } else { grow(); }
+  })();
 
   /* ============ Before/after compare sliders ============ */
   var sliders = document.querySelectorAll('[data-slider]');

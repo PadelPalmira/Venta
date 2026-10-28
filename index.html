@@ -28,6 +28,7 @@
   </button>
   <div class="nav-links" id="navLinks">
     <a href="#negocio">Negocio</a>
+    <a href="#finanzas">Finanzas</a>
     <a href="#terreno">Terreno</a>
     <a href="#oportunidad">Oportunidad</a>
     <a href="#valuacion">Valuación</a>
@@ -66,19 +67,19 @@
         <p class="stat-label">Ingresos operativos<br>últimos 12 meses</p>
       </div>
       <div class="stat-card reveal">
-        <p class="stat-num" data-count="58.8" data-suffix="%">0%</p>
-        <p class="stat-label">Margen EBITDA<br>operativo ajustado</p>
+        <p class="stat-num" data-count="1.09" data-prefix="$" data-suffix="M">$0M</p>
+        <p class="stat-label">EBITDA operativo ajustado<br>margen de 43.4%</p>
       </div>
       <div class="stat-card reveal">
         <p class="stat-num" data-count="4.9" data-suffix="★">0★</p>
         <p class="stat-label">Calificación — la más alta<br>entre 4 clubes de Cuernavaca</p>
       </div>
       <div class="stat-card reveal">
-        <p class="stat-num" data-count="11.5" data-prefix="+" data-suffix="%">+0%</p>
-        <p class="stat-label">Crecimiento de ocupación<br>año contra año</p>
+        <p class="stat-num" data-count="32" data-prefix="+" data-suffix="%">+0%</p>
+        <p class="stat-label">Ingresos ene–may 2026<br>vs. mismo periodo 2025</p>
       </div>
     </div>
-    <p class="stats-note reveal">Cifras ajustadas — excluyen gastos personales de los socios y compensación del dueño saliente. Ver Reporte Financiero, hoja "Notas Metodológicas".</p>
+    <p class="stats-note reveal">Últimos 12 meses (junio 2025 – mayo 2026). Cifras ajustadas: excluyen gastos personales de los socios, el sueldo del director saliente y el Fondo Apapacho. Ver Estados Financieros.</p>
   </section>
 
   <!-- ============ EL NEGOCIO ============ -->
@@ -112,9 +113,9 @@
 
         <div class="app-demo">
           <div class="app-demo-copy">
-            <p class="app-demo-eyebrow">Demo — diseño original de la app</p>
+            <p class="app-demo-eyebrow">Demo ilustrativa — datos de ejemplo</p>
             <h4>Así se ve por dentro</h4>
-            <p>Tres pantallas reales de la aplicación en uso hoy: el ranking mensual, las rondas en vivo capturadas por recepción, y la tabla completa de "Puntos Palmira". Toca las pestañas para navegar.</p>
+            <p>Recreación de tres vistas de la aplicación —el ranking mensual, las rondas en vivo que captura recepción y la tabla de "Puntos Palmira"— con nombres de ejemplo. En 2026 la app se reconstruyó por completo (versión 2.0): registro de jugadores, convocatorias semanales y liguilla automatizada. Toca las pestañas para navegar.</p>
             <div class="app-demo-tabs" role="tablist" aria-label="Pantallas de la app">
               <button class="app-tab-btn active" data-screen="inicio" role="tab" aria-selected="true">Inicio</button>
               <button class="app-tab-btn" data-screen="torneos" role="tab" aria-selected="false">Torneos</button>
@@ -259,10 +260,59 @@
     </div>
   </section>
 
+  <!-- ============ FINANZAS ============ -->
+  <section class="section" id="finanzas">
+    <div class="section-inner">
+      <p class="eyebrow reveal">02 — Resultados financieros</p>
+      <h2 class="section-title reveal">Rentable desde el primer mes.<br>Sin deuda.</h2>
+      <p class="lead reveal">19 meses de operación, todos con EBITDA positivo. El efectivo en bancos y caja nunca ha sido menor al que explican los registros, y la inversión de $9.1M se financió al 100% con capital de los socios.</p>
+
+      <div class="chart-block reveal">
+        <div class="month-chart-head">
+          <h3>Ingresos y EBITDA por mes <span>(miles de MXN)</span></h3>
+          <div class="month-legend"><span class="lg lg-rev">Ingresos</span><span class="lg lg-eb">EBITDA ajustado</span></div>
+        </div>
+        <div class="month-chart" id="chartMensual" role="img" aria-label="Ingresos y EBITDA mensuales de noviembre 2024 a mayo 2026"></div>
+        <p class="chart-note">Noviembre 2024 – mayo 2026. Enero y febrero 2026 incluyen $75k de honorarios legales no recurrentes, que se dejaron dentro del EBITDA por prudencia.</p>
+      </div>
+
+      <div class="fin-grid">
+        <div class="fin-card reveal">
+          <p class="fin-eyebrow">Estado de resultados · TTM</p>
+          <dl>
+            <div><dt>Ingresos</dt><dd>$2,507,417</dd></div>
+            <div><dt>Utilidad bruta</dt><dd>$1,960,013 <small>78.2%</small></dd></div>
+            <div class="fin-key"><dt>EBITDA ajustado</dt><dd>$1,088,577 <small>43.4%</small></dd></div>
+            <div><dt>Flujo libre pro forma</dt><dd>$960,625</dd></div>
+          </dl>
+        </div>
+        <div class="fin-card reveal">
+          <p class="fin-eyebrow">Balance general · 30-abr-2026</p>
+          <dl>
+            <div><dt>Efectivo y bancos</dt><dd>$467,498</dd></div>
+            <div><dt>Activo fijo neto</dt><dd>$7,758,905</dd></div>
+            <div class="fin-key"><dt>Deuda financiera</dt><dd>$0</dd></div>
+            <div><dt>Capital contable</dt><dd>$8,226,403</dd></div>
+          </dl>
+        </div>
+        <div class="fin-card reveal">
+          <p class="fin-eyebrow">Proyección orgánica · EBITDA</p>
+          <dl>
+            <div><dt>Año 1 (jun-26 – may-27)</dt><dd>$1,213,764</dd></div>
+            <div><dt>Año 2</dt><dd>$1,353,347</dd></div>
+            <div class="fin-key"><dt>Año 3</dt><dd>$1,508,981</dd></div>
+            <div><dt>Supuesto</dt><dd>+11.5% anual</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="stats-note reveal">Estados no auditados. Depreciación (10% anual), ISR (30%) y capex de mantenimiento (3% de ingresos) pro forma. La proyección no incluye la Fase 2. Detalle completo en Estados Financieros.</p>
+    </div>
+  </section>
+
   <!-- ============ EL TERRENO ============ -->
   <section class="section" id="terreno">
     <div class="section-inner">
-      <p class="eyebrow reveal">02 — El terreno</p>
+      <p class="eyebrow reveal">03 — El terreno</p>
       <h2 class="section-title reveal">3,762 m² en Avenida Palmira.<br>Documentación en regla.</h2>
       <p class="lead reveal">Un activo que sostiene valor por sí solo, independientemente del negocio que opera sobre él — con uso de suelo que ya ampara la expansión completa del club.</p>
 
@@ -278,7 +328,7 @@
             <li><strong>2.0 km</strong><span>del centro histórico de Cuernavaca</span></li>
             <li><strong>4.9 km</strong><span>de la Universidad Tecmilenio</span></li>
           </ul>
-          <p>Libre de gravámenes, licencia de uso de suelo y licencia de funcionamiento vigentes. El predio utiliza hoy solo el 25–32% de los coeficientes de ocupación y utilización de suelo permitidos — holgura normativa suficiente para activar alberca, cancha de tenis y casa club sin trámite adicional.</p>
+          <p>Libre de gravámenes (sujeto a certificado oficial al cierre), licencia de uso de suelo y licencia de funcionamiento vigentes. El predio utiliza hoy solo el 25–32% de los coeficientes de ocupación y utilización de suelo permitidos — holgura normativa suficiente para activar alberca, cancha de tenis y casa club sin trámite adicional.</p>
         </div>
       </div>
 
@@ -293,7 +343,7 @@
   <!-- ============ LA OPORTUNIDAD (FASE 2) ============ -->
   <section class="section section-tint-sky" id="oportunidad">
     <div class="section-inner">
-      <p class="eyebrow reveal">03 — La oportunidad</p>
+      <p class="eyebrow reveal">04 — La oportunidad</p>
       <h2 class="section-title reveal">Alberca, tenis y casa club.<br>Ya construidos. Esperando activarse.</h2>
       <p class="lead reveal">Tres amenidades existen hoy dentro del mismo predio, desactivadas por decisión de reinvertir el capital disponible en el negocio de pádel durante los primeros dos años. Arrastra el control para ver la transformación.</p>
 
@@ -350,13 +400,13 @@
   <!-- ============ VALUACIÓN ============ -->
   <section class="section" id="valuacion">
     <div class="section-inner">
-      <p class="eyebrow reveal">04 — Valuación</p>
-      <h2 class="section-title reveal">Tres escenarios.<br>Un precio conservador.</h2>
-      <p class="lead reveal">El precio de oferta se ubica en el extremo conservador del rango combinado (terreno + negocio), no por encima de él.</p>
+      <p class="eyebrow reveal">05 — Valuación</p>
+      <h2 class="section-title reveal">Tres escenarios.<br>Un precio respaldado por la tierra.</h2>
+      <p class="lead reveal">El precio de oferta queda entre el escenario conservador y el base. Descontando el valor del terreno, el comprador paga el negocio en operación a entre 2.7x y 6.1x su EBITDA.</p>
 
       <div class="chart-block reveal">
         <div class="bar-chart bar-chart-valuacion" id="chartValuacion"></div>
-        <p class="chart-note">Valor combinado (terreno vía comparables de mercado + negocio vía múltiplo de 5x–8x EBITDA ajustado TTM). Ver Estudio de Valuación Inmobiliaria para metodología completa.</p>
+        <p class="chart-note">Valor combinado: terreno por comparables de mercado ($7,000 / $8,000 / $9,500 por m²) + negocio a 5.0x / 6.5x / 8.0x el EBITDA ajustado TTM de $1.09M. No sustituye un avalúo profesional. Ver Estudio de Valuación y Estados Financieros.</p>
       </div>
 
       <div class="price-banner reveal">
@@ -370,7 +420,7 @@
   <!-- ============ COMPETENCIA ============ -->
   <section class="section section-tint-pink" id="competencia">
     <div class="section-inner">
-      <p class="eyebrow reveal">05 — Panorama competitivo</p>
+      <p class="eyebrow reveal">06 — Panorama competitivo</p>
       <h2 class="section-title reveal">Cuatro clubes.<br>Una sola calificación líder.</h2>
       <div class="comp-grid">
         <div class="comp-card comp-card-highlight reveal">
@@ -404,12 +454,22 @@
   <!-- ============ DESCARGAS ============ -->
   <section class="section section-dark" id="descargas">
     <div class="section-inner">
-      <p class="eyebrow eyebrow-light reveal">06 — Documentación completa</p>
-      <h2 class="section-title title-light reveal">Cuatro documentos.<br>Toda la información detallada.</h2>
+      <p class="eyebrow eyebrow-light reveal">07 — Documentación completa</p>
+      <h2 class="section-title title-light reveal">Seis documentos.<br>Toda la información detallada.</h2>
       <p class="lead lead-light reveal">Este sitio sintetiza el caso de inversión. Para el análisis completo, con metodología, comparables y estados financieros detallados:</p>
       <p class="gate-hint reveal">🔒 Protegidos con código de acceso</p>
 
       <div class="downloads-grid">
+        <a href="assets/docs/Presentacion_Inversionistas_Padel_Palmira.pdf" class="dl-card dl-card-featured reveal" data-gated download>
+          <span class="dl-icon">↓</span>
+          <span class="dl-name">Presentación para Inversionistas</span>
+          <span class="dl-desc">El caso completo en 24 láminas — PDF</span>
+        </a>
+        <a href="assets/docs/Estados_Financieros_Padel_Palmira.xlsx" class="dl-card dl-card-featured reveal" data-gated download>
+          <span class="dl-icon">↓</span>
+          <span class="dl-name">Estados Financieros</span>
+          <span class="dl-desc">Resultados, balance, flujo, proyección y valuación — Excel</span>
+        </a>
         <a href="assets/docs/Resumen_Ejecutivo_Padel_Palmira.pdf" class="dl-card reveal" data-gated download>
           <span class="dl-icon">↓</span>
           <span class="dl-name">Resumen Ejecutivo</span>
@@ -418,7 +478,7 @@
         <a href="assets/docs/Reporte_Financiero.xlsx" class="dl-card reveal" data-gated download>
           <span class="dl-icon">↓</span>
           <span class="dl-name">Reporte Financiero</span>
-          <span class="dl-desc">Histórico ajustado y proyecciones — Excel</span>
+          <span class="dl-desc">Detalle mensual ajustado y notas metodológicas — Excel</span>
         </a>
         <a href="assets/docs/Estudio_Valuacion_Terreno_Padel_Palmira.pdf" class="dl-card reveal" data-gated download>
           <span class="dl-icon">↓</span>
